@@ -1,0 +1,7 @@
+<section>
+  <h2>Backend status</h2>
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error" style="color:darkred">{{ error }}</div>
+  <div *ngIf="message">{{ message }}</div>
+</section>
+

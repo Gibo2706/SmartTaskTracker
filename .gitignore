@@ -36,3 +36,6 @@ backend/.nb-gradle/
 
 ### VS Code ###
 backend/.vscode/
+
+
+/backend/*.env

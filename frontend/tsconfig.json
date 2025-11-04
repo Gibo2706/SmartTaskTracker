@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "types": [],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "ES2022",
+      "DOM"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

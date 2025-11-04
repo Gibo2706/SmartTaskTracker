@@ -1,0 +1,41 @@
+{
+  "$schema": "https://angular.io/config/schema.json",
+  "version": 1,
+  "projects": {
+    "smart-task-tracker": {
+      "projectType": "application",
+      "root": "src",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/smart-task-tracker",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [],
+            "tsConfig": "tsconfig.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "smart-task-tracker:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "smart-task-tracker",
+  "cli": {
+    "analytics": "c85a4acf-302a-4d52-ad70-f4bcd3b7e24c"
+  }
+}
+
